@@ -7,12 +7,12 @@
 
 ## Screenshot
 
-![screenshot](path)
+![screenshot](assets/images/web-pic.png)
 
 
 ## Built with
 - Major languages: HTML, CSS, JavaScript
-- Technologies used: Github, Linters
+- Technologies used: SASS, Github, Linters
 
 ## Getting Started
 Clone the repository and setup the linters
