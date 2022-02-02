@@ -1,7 +1,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)   ![](https://img.shields.io/badge/MENGSTU-FENTAW-success)
 
-# Personal Portfolio
+# Captone-01- BaMen Services Website
 
 > In this project, the portfolio responsive website has been done using HTML and CSS and Vanilla JavaScript.
 
@@ -15,9 +15,9 @@
 - Technologies used: Github, Linters
 
 ## Getting Started
-Clone the repository and setup the linters
+Clone the repository and setup the linter
 
-### Prerequisites
+## Prerequisites
 - npm ( Node Package Manager )
 - git and Github Account
 
