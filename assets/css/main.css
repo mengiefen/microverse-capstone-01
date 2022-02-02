@@ -1,5 +1,6 @@
 @import url("../components/_button");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 header {
   display: none;
   position: fixed;
@@ -11,6 +12,7 @@ header {
   padding: 2rem 1rem 2rem 1rem;
   background: #272a31;
 }
+
 @media only screen and (min-width: 768px) {
   header {
     padding: 0;
@@ -34,6 +36,7 @@ header {
   height: 3rem;
   padding: 0 5.2rem;
 }
+
 @media only screen and (min-width: 768px) {
   .top-nav {
     display: flex;
@@ -46,15 +49,18 @@ header {
   margin: 0 1.25rem;
   padding-bottom: 1.8rem;
 }
+
 @media only screen and (min-width: 768px) {
   .top-nav-item {
     margin-right: 1.8rem;
     padding: 1.25rem 0;
   }
 }
+
 .top-nav-item :hover {
   color: #ec5242;
 }
+
 .top-nav-item .nav-link {
   text-decoration: none;
   font-size: 1.4rem;
@@ -65,6 +71,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 @media only screen and (min-width: 768px) {
   .wrapper-bottom-nav {
     display: block;
@@ -74,6 +81,7 @@ header {
 .menu-wrapper {
   padding-bottom: 4rem;
 }
+
 @media only screen and (min-width: 768px) {
   .menu-wrapper {
     display: none;
@@ -85,9 +93,11 @@ header {
   top: 2rem;
   left: 2.5rem;
 }
+
 .open-menu .fa-bars {
   color: #272a31;
 }
+
 .open-menu .fa-bars:hover {
   color: #ec5242;
 }
@@ -97,9 +107,11 @@ header {
   top: 2rem;
   left: 2.5rem;
 }
+
 .close-menu .fa-times {
   color: #d3d3d3;
 }
+
 .close-menu .fa-times :hover {
   color: #ec5242;
 }
@@ -108,6 +120,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 @media only screen and (min-width: 768px) {
   .wrapper-nav-list {
     flex-direction: row;
@@ -122,14 +135,17 @@ header {
 .bottom-nav {
   list-style: none;
 }
+
 @media only screen and (min-width: 768px) {
   .bottom-nav {
     display: flex;
   }
 }
+
 .bottom-nav:last-child {
   margin-top: 2rem;
 }
+
 @media only screen and (min-width: 768px) {
   .bottom-nav:last-child {
     margin: 0;
@@ -140,25 +156,30 @@ header {
   margin: 0 1.25rem;
   padding-bottom: 1.8rem;
 }
+
 @media only screen and (min-width: 768px) {
   .nav-item {
     margin-right: 1.8rem;
     padding: 1.25rem 0;
   }
 }
+
 .nav-item .nav-link {
   text-decoration: none;
   font-size: 1.8rem;
   color: #d3d3d3;
 }
+
 .nav-item .nav-link:hover {
   color: #ec5242;
 }
+
 @media only screen and (min-width: 768px) {
   .nav-item .nav-link {
     font-size: 1.6rem;
     color: #272a31;
   }
+
   .nav-item .nav-link:hover {
     padding-bottom: 0.3rem;
     border-bottom: 3px solid #ec5242;
@@ -170,13 +191,16 @@ header {
   padding: 0.7rem;
   max-width: 20rem;
 }
+
 .nav-item:last-child:hover {
   border: 2px solid transparent;
   background: #ec5242;
 }
+
 .nav-item:last-child .nav-link {
   border-bottom: none;
 }
+
 .nav-item:last-child .nav-link:hover {
   color: #d3d3d3;
 }
@@ -184,10 +208,12 @@ header {
 .navbar-brand {
   padding: 1rem;
 }
+
 .navbar-brand .logo-image {
   max-width: 12rem;
   height: auto;
 }
+
 @media only screen and (min-width: 768px) {
   .navbar-brand {
     padding: 0;
@@ -206,6 +232,7 @@ header {
 .wrapper {
   padding: 10rem 2rem 0 2rem;
 }
+
 @media only screen and (min-width: 768px) {
   .wrapper {
     width: 80%;
@@ -220,6 +247,7 @@ header {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
+
 @media only screen and (min-width: 768px) {
   .type-1 {
     font-size: 2.8rem;
@@ -235,6 +263,7 @@ header {
   color: #ec5242;
   font-family: cocogoose, lato, serif;
 }
+
 @media only screen and (min-width: 768px) {
   .heading {
     font-size: 5.1rem;
@@ -250,6 +279,7 @@ header {
   border: 2px solid white;
   margin: 2rem 0;
 }
+
 @media only screen and (min-width: 768px) {
   .header-text {
     padding: 1rem 0;
@@ -289,6 +319,7 @@ header {
   flex-direction: column;
   padding: 3rem 0 0 0;
 }
+
 @media only screen and (min-width: 768px) {
   .cards {
     flex-direction: row;
@@ -330,7 +361,9 @@ header {
   transition: all 0.5s ease-in-out;
   border: 2px solid transparent;
 }
-.card-1:hover, .card-1:active,
+
+.card-1:hover,
+.card-1:active,
 .card-2:hover,
 .card-2:active,
 .card-3:hover,
@@ -341,12 +374,13 @@ header {
 .card-5:active {
   border: 2px solid #d3d3d3;
 }
+
 @media only screen and (min-width: 768px) {
   .card-1,
-.card-2,
-.card-3,
-.card-4,
-.card-5 {
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,15 +389,17 @@ header {
     height: 22.8rem;
     max-width: 21.7rem;
   }
-  .card-1:hover, .card-1:active,
-.card-2:hover,
-.card-2:active,
-.card-3:hover,
-.card-3:active,
-.card-4:hover,
-.card-4:active,
-.card-5:hover,
-.card-5:active {
+
+  .card-1:hover,
+  .card-1:active,
+  .card-2:hover,
+  .card-2:active,
+  .card-3:hover,
+  .card-3:active,
+  .card-4:hover,
+  .card-4:active,
+  .card-5:hover,
+  .card-5:active {
     border: 2px solid #d3d3d3;
     transform: scale(1.1);
     z-index: 1;
@@ -380,6 +416,7 @@ header {
   font-size: 1.6rem;
   color: #ec5242;
 }
+
 @media only screen and (min-width: 768px) {
   .work-type {
     margin-bottom: 1.5rem;
@@ -392,6 +429,7 @@ header {
   font-weight: normal;
   color: #d3d3d3;
 }
+
 @media only screen and (min-width: 768px) {
   .work-desc {
     font-size: 1.4rem;
@@ -413,6 +451,7 @@ header {
   background-color: #ec5242;
   margin: 3rem 0;
 }
+
 @media only screen and (min-width: 768px) {
   .btn-solid {
     background: none;
@@ -422,7 +461,9 @@ header {
     margin: 7rem auto;
   }
 }
-.btn-solid:hover, .btn-solid:active {
+
+.btn-solid:hover,
+.btn-solid:active {
   background: #d3d3d3;
   color: #ec5242;
 }
@@ -433,6 +474,7 @@ header {
   margin: 3rem 1rem;
   align-items: center;
 }
+
 #team-section .section-heading {
   font-size: 2.4rem;
   font-weight: 600;
@@ -443,6 +485,7 @@ header {
   padding: 3rem 0 1rem 0;
   align-self: center;
 }
+
 #team-section .border {
   align-self: center;
   width: 8rem;
@@ -457,6 +500,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 @media only screen and (min-width: 768px) {
   .teams {
     display: grid;
@@ -471,14 +515,17 @@ header {
   margin-bottom: 3.5rem;
   max-width: 54rem;
 }
+
 .member-1 .wrapper-member-image {
   margin-right: 1.5rem;
   align-self: center;
 }
+
 .member-1 .member-details {
   display: flex;
   flex-direction: column;
 }
+
 .member-1 .member-name {
   font-size: 1.7rem;
   font-weight: 700;
@@ -486,6 +533,7 @@ header {
   color: #272a31;
   padding-bottom: 1rem;
 }
+
 .member-1 .member-title {
   font-size: 1.6rem;
   line-height: 2rem;
@@ -493,6 +541,7 @@ header {
   color: #ec5242;
   padding-bottom: 1rem;
 }
+
 .member-1 .member-desc {
   font-size: 1.4rem;
   line-height: 2rem;
@@ -522,12 +571,15 @@ header {
   text-align: center;
   font-weight: 600;
 }
+
 .btn-load .fa-angle-down {
   padding-left: 1rem;
   font-size: 1.6rem;
   color: #ec5242;
 }
-.btn-load:hover, .btn-load:active {
+
+.btn-load:hover,
+.btn-load:active {
   background: #ec5242;
   color: #d3d3d3;
   border: 2px solid transparent;
@@ -552,6 +604,7 @@ header {
   margin: 0 1.5rem;
   max-height: 3.6rem;
 }
+
 @media only screen and (min-width: 768px) {
   .partner-logo {
     margin: 0 3rem;
@@ -581,6 +634,7 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+
 @media only screen and (min-width: 768px) {
   .top-footer {
     flex-direction: row;
@@ -592,6 +646,7 @@ header {
   justify-content: center;
   margin: 3rem 0 1.5rem 0;
 }
+
 @media only screen and (min-width: 768px) {
   .top {
     margin: 3rem 0;
@@ -603,6 +658,7 @@ header {
   justify-content: center;
   margin: 1.5rem 0;
 }
+
 @media only screen and (min-width: 768px) {
   .bottom {
     margin: 3rem 0;
@@ -634,6 +690,197 @@ p span {
   padding: 0;
 }
 
+#about-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../../assets/images/pictures/bg.png");
+}
+
+.about-header {
+  margin-top: 10rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-header {
+    max-width: 76.8rem;
+    margin: 10rem auto;
+  }
+}
+
+.about-heading {
+  font-size: 8vw;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  padding: 1.4rem 0 3rem 0;
+  color: #ec5242;
+  font-family: cocogoose, lato, serif;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-heading {
+    font-size: 5.1rem;
+  }
+}
+
+.wrapper-text {
+  margin: 2rem 0;
+  padding: 1rem 3rem;
+  border: 2px solid #d3d3d3;
+  background: white;
+}
+
+.about-desc {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: normal;
+  color: #272a31;
+  text-align: center;
+}
+
+.further-contact {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: normal;
+  color: #272a31;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.wrapper-about {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper-about {
+    margin: 0 auto;
+  }
+}
+
+.pic-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #272a31;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-border {
+  align-self: center;
+  width: 4.8rem;
+  height: 3px;
+  background: #ec5242;
+  margin: 0.7rem auto 4rem auto;
+}
+
+.pic-desc {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: normal;
+  color: #272a31;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.logo-container {
+  background: white;
+  align-self: center;
+  padding: 3rem 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-container {
+    padding: 3rem 7rem;
+  }
+}
+
+.logo-container .logo-pic {
+  max-width: 30rem;
+  height: auto;
+}
+
+.separator {
+  height: 0;
+  margin-bottom: 2rem;
+  border: 0.05px solid lightgray;
+}
+
+.previous-works {
+  margin: 2rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .previous-works {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.experiance-1,
+.experiance-2 {
+  text-align: center;
+  position: relative;
+  margin: 2rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .experiance-1,
+  .experiance-2 {
+    margin: 0 1rem;
+  }
+}
+
+.image-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(170, 90, 81, 0.8);
+}
+
+.work-logo {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.work-details {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.work-details .year {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.work-details .work-para {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: #d3d3d3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -650,5 +897,3 @@ html {
   font-family: Lato, serif;
   font-size: 10px;
 }
-
-/*# sourceMappingURL=main.css.map */
