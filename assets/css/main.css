@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
 header {
   display: none;
   position: fixed;
@@ -11,7 +10,6 @@ header {
   padding: 2rem 1rem 2rem 1rem;
   background: #272a31;
 }
-
 @media only screen and (min-width: 768px) {
   header {
     padding: 0;
@@ -35,7 +33,6 @@ header {
   height: 3rem;
   padding: 0 5.2rem;
 }
-
 @media only screen and (min-width: 768px) {
   .top-nav {
     display: flex;
@@ -48,18 +45,15 @@ header {
   margin: 0 1.25rem;
   padding-bottom: 1.8rem;
 }
-
 @media only screen and (min-width: 768px) {
   .top-nav-item {
     margin-right: 1.8rem;
     padding: 1.25rem 0;
   }
 }
-
 .top-nav-item :hover {
   color: #ec5242;
 }
-
 .top-nav-item .nav-link {
   text-decoration: none;
   font-size: 1.4rem;
@@ -70,7 +64,6 @@ header {
   display: flex;
   flex-direction: column;
 }
-
 @media only screen and (min-width: 768px) {
   .wrapper-bottom-nav {
     display: block;
@@ -80,7 +73,6 @@ header {
 .menu-wrapper {
   padding-bottom: 4rem;
 }
-
 @media only screen and (min-width: 768px) {
   .menu-wrapper {
     display: none;
@@ -92,11 +84,9 @@ header {
   top: 2rem;
   left: 2.5rem;
 }
-
 .open-menu .fa-bars {
   color: #272a31;
 }
-
 .open-menu .fa-bars:hover {
   color: #ec5242;
 }
@@ -106,11 +96,9 @@ header {
   top: 2rem;
   left: 2.5rem;
 }
-
 .close-menu .fa-times {
   color: #d3d3d3;
 }
-
 .close-menu .fa-times :hover {
   color: #ec5242;
 }
@@ -119,7 +107,6 @@ header {
   display: flex;
   flex-direction: column;
 }
-
 @media only screen and (min-width: 768px) {
   .wrapper-nav-list {
     flex-direction: row;
@@ -134,17 +121,14 @@ header {
 .bottom-nav {
   list-style: none;
 }
-
 @media only screen and (min-width: 768px) {
   .bottom-nav {
     display: flex;
   }
 }
-
 .bottom-nav:last-child {
   margin-top: 2rem;
 }
-
 @media only screen and (min-width: 768px) {
   .bottom-nav:last-child {
     margin: 0;
@@ -155,30 +139,25 @@ header {
   margin: 0 1.25rem;
   padding-bottom: 1.8rem;
 }
-
 @media only screen and (min-width: 768px) {
   .nav-item {
     margin-right: 1.8rem;
     padding: 1.25rem 0;
   }
 }
-
 .nav-item .nav-link {
   text-decoration: none;
   font-size: 1.8rem;
   color: #d3d3d3;
 }
-
 .nav-item .nav-link:hover {
   color: #ec5242;
 }
-
 @media only screen and (min-width: 768px) {
   .nav-item .nav-link {
     font-size: 1.6rem;
     color: #272a31;
   }
-
   .nav-item .nav-link:hover {
     padding-bottom: 0.3rem;
     border-bottom: 3px solid #ec5242;
@@ -190,16 +169,13 @@ header {
   padding: 0.7rem;
   max-width: 20rem;
 }
-
 .nav-item:last-child:hover {
   border: 2px solid transparent;
   background: #ec5242;
 }
-
 .nav-item:last-child .nav-link {
   border-bottom: none;
 }
-
 .nav-item:last-child .nav-link:hover {
   color: #d3d3d3;
 }
@@ -207,16 +183,94 @@ header {
 .navbar-brand {
   padding: 1rem;
 }
-
 .navbar-brand .logo-image {
   max-width: 12rem;
   height: auto;
 }
-
 @media only screen and (min-width: 768px) {
   .navbar-brand {
     padding: 0;
   }
+}
+
+#intro-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/images/pictures/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper {
+  padding: 10rem 2rem 0 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 80%;
+    padding: 12% 3rem 0 12rem;
+  }
+}
+
+.type-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #ec5242;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .type-1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+}
+
+.heading {
+  font-size: 8vw;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  padding: 1.4rem 0 3rem 0;
+  color: #ec5242;
+  font-family: cocogoose, lato, serif;
+}
+@media only screen and (min-width: 768px) {
+  .heading {
+    font-size: 5.1rem;
+    padding: 1.5rem 0;
+  }
+}
+
+.header-text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: normal;
+  color: #272a31;
+  border: 2px solid white;
+  margin: 2rem 0;
+}
+@media only screen and (min-width: 768px) {
+  .header-text {
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    font-weight: normal;
+    color: #272a31;
+  }
+}
+
+.type-2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  color: #272a31;
+}
+
+.header-text-2 {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  font-weight: normal;
+  color: #272a31;
 }
 
 * {
@@ -235,3 +289,5 @@ html {
   font-family: Lato, serif;
   font-size: 10px;
 }
+
+/*# sourceMappingURL=main.css.map */

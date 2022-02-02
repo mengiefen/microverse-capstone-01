@@ -193,6 +193,86 @@ header {
   }
 }
 
+#intro-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/images/pictures/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper {
+  padding: 10rem 2rem 0 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 80%;
+    padding: 12% 3rem 0 12rem;
+  }
+}
+
+.type-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #ec5242;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .type-1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+}
+
+.heading {
+  font-size: 8vw;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  padding: 1.4rem 0 3rem 0;
+  color: #ec5242;
+  font-family: cocogoose, lato, serif;
+}
+@media only screen and (min-width: 768px) {
+  .heading {
+    font-size: 5.1rem;
+    padding: 1.5rem 0;
+  }
+}
+
+.header-text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: normal;
+  color: #272a31;
+  border: 2px solid white;
+  margin: 2rem 0;
+}
+@media only screen and (min-width: 768px) {
+  .header-text {
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    font-weight: normal;
+    color: #272a31;
+  }
+}
+
+.type-2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  color: #272a31;
+}
+
+.header-text-2 {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  font-weight: normal;
+  color: #272a31;
+}
+
 * {
   margin: 0;
   padding: 0;
