@@ -1,18 +1,22 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)   ![](https://img.shields.io/badge/MENGSTU-FENTAW-success)
 
+<<<<<<< HEAD
 # Captone-01- BaMen Services Website
+=======
+# Capstone-01:BaMen Services Website
+>>>>>>> bamen-website
 
 > In this project, the portfolio responsive website has been done using HTML and CSS and Vanilla JavaScript.
 
 ## Screenshot
 
-![screenshot](path)
+![screenshot](assets/images/web-pic.png)
 
 
 ## Built with
 - Major languages: HTML, CSS, JavaScript
-- Technologies used: Github, Linters
+- Technologies used: SASS, Github, Linters
 
 ## Getting Started
 Clone the repository and setup the linter
@@ -26,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
   - Open terminal  
   - Change the directory you want put the repo
   - Then run
-      i. Run git clone <git@github.com:<accountid>/<repo-name>.git>
+      i. Run git clone <git@github.com:mengiefen/microverse-capstone-01.git>
       ii. cd repo-name/
   
 ### Install
@@ -63,14 +67,18 @@ To get a local copy up and running follow these simple example steps.
 
 
 ## Acknowledgments
-
+- Credit to  [Cindy Shin](https://www.behance.net/adagio07) the author of the [original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 - To my coding partners, morning session team,reviewers and standup team memebers.
 
 ## Live Demo
+<<<<<<< HEAD
  [![](https://img.shields.io/badge/Click-Here-blue)](www.google.com)
   
 ## Original design idea by Cindy Shin in Behance.
  -https://creativecommons.org/licenses/by-nc/4.0/
+=======
+ [![](https://img.shields.io/badge/Click-Here-blue)](https://mengiefen.github.io/microverse-capstone-01/)
+>>>>>>> bamen-website
 
 ## 📝 License
 

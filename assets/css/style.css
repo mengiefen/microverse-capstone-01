@@ -1,0 +1,70 @@
+.hide {
+  display: block;
+}
+
+.social-links {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .social-links {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 45vh;
+    z-index: 999;
+    width: 2.2rem;
+  }
+
+  .link-items {
+    list-style: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .link i {
+    font-size: 2.4rem;
+    height: auto;
+    color: #837a7a;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.fa-facebook-square:hover {
+  color: #3b5998;
+  font-size: 3.2rem;
+}
+
+.fa-github-square:hover {
+  color: #00405d;
+  font-size: 3.2rem;
+}
+
+.fa-twitter-square:hover {
+  color: #55acee;
+  font-size: 3.2rem;
+}
+
+.fa-linkedin-square:hover {
+  color: #0077b5;
+  font-size: 3.2rem;
+}
+
+.fa-pinterest-square:hover {
+  color: #bd081c;
+  font-size: 3.2rem;
+}
+
+.blur > *:not(#about-header) {
+  filter: blur(3px);
+  overflow: hidden;
+}
+
+.blurr > *:not(#header) {
+  filter: blur(3px);
+  overflow: hidden;
+}

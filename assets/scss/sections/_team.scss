@@ -1,0 +1,102 @@
+@import "variables";
+@import "../components/mixins";
+
+#team-section {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 2.8rem;
+  align-items: center;
+
+  .section-heading {
+    @include heading-2($secondary);
+
+    padding: 3rem 0 1rem 0;
+    align-self: center;
+  }
+
+  .border {
+    @include border;
+  }
+}
+
+.teams {
+  padding-top: 3rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+
+  @include device(tab) {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3.5rem;
+  }
+}
+
+.member-1 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3.5rem;
+  max-width: 54rem;
+
+  .wrapper-member-image {
+    margin-right: 1.5rem;
+    align-self: center;
+  }
+
+  .member-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member-name {
+    @include section-heading($primary, 1.7rem, 2rem, 700);
+
+    padding-bottom: 1rem;
+  }
+
+  .member-title {
+    @include paragraph($font:1.6rem, $height:2rem, $weight:600, $color:$secondary);
+
+    padding-bottom: 1rem;
+  }
+
+  .member-desc {
+    @include paragraph($font:1.4rem, $height:2rem, $weight:normal, $color:$primary);
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: #000;
+  margin-right: 0.8rem;
+}
+
+.btn-load {
+  text-decoration: none;
+  width: 100%;
+  max-width: 54rem;
+  padding: 1.2rem;
+  color: $primary;
+  font-size: 1.6rem;
+  border: 2px solid $primary;
+  text-align: center;
+  font-weight: 600;
+
+  .fa-angle-down {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    color: $secondary;
+  }
+
+  &:hover,
+  &:active {
+    background: $secondary;
+    color: $light;
+    border: 2px solid transparent;
+  }
+}

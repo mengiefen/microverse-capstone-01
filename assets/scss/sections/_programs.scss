@@ -1,0 +1,127 @@
+@import "variables";
+@import "../components/mixins";
+@import url("../components/_button");
+@import "../components/query_mixin";
+
+#work-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000;
+  padding: 0 2.8rem;
+  background-color: #17191d;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%23000000' fill-opacity='0.91' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 0 0;
+
+  @include device (tab) {
+    flex-direction: row;
+  }
+}
+
+.section-heading {
+  @include heading-2($light);
+
+  padding: 3rem 0 1rem 0;
+}
+
+.border {
+  @include border(4.8rem);
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5 {
+  background: $primary;
+  display: grid;
+  grid-template-columns: 2fr 2fr 6fr;
+  align-items: center;
+  column-gap: 0.8rem;
+  padding: 1rem;
+  min-height: 7rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid transparent;
+
+  &:hover,
+  &:active {
+    border: 2px solid $light;
+  }
+
+  @include device(tab) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.3rem;
+    width: 20%;
+    height: 22.8rem;
+    max-width: 21.7rem;
+
+    &:hover,
+    &:active {
+      border: 2px solid $light;
+      transform: scale(1.1);
+      z-index: 1;
+    }
+  }
+}
+
+.work-icon {
+  @include device(tab) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.work-type {
+  font-size: 1.6rem;
+  color: $secondary;
+
+  @include device(tab) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.work-desc {
+  @include paragraph($color:$light, $font:1.2rem);
+
+  @include device(tab) {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+.btn-solid {
+  align-self: center;
+  text-align: center;
+  border: none;
+  padding: 2.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 30rem;
+  color: $light;
+  background-color: $secondary;
+  margin: 3rem 0;
+
+  @include device(tab) {
+    background: none;
+    padding: 0;
+    text-decoration: underline;
+    font-weight: normal;
+    margin: 7rem auto;
+  }
+
+  &:hover,
+  &:active {
+    background: $light;
+    color: $secondary;
+  }
+}
