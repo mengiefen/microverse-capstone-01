@@ -8,16 +8,17 @@
   flex-direction: column;
   justify-content: center;
   background-image: url("../../assets/images/pictures/bg.png");
+  position: relative;
 }
 
 .about-header {
-  margin-top: 10rem;
-  padding: 0 2.8rem;
+  padding: 6rem 2.8rem 0 2.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include device(tab) {
+    padding: 3rem 2.8rem 0 2.8rem;
     max-width: 76.8rem;
     margin: 10rem auto;
   }
@@ -159,5 +160,51 @@
 
   .work-para {
     @include paragraph($color: $light, $font: 1.8rem, $weight: 600);
+  }
+}
+
+.wrapper-about-open {
+  z-index: 999;
+
+  @include device(tab) {
+    display: none;
+  }
+}
+
+#about-open {
+  display: block;
+
+  .fa-bars {
+    color: $primary;
+  }
+}
+
+#about-close {
+  position: absolute;
+  top: 2rem;
+  left: 2.5rem;
+
+  .fa-times {
+    color: $light;
+
+    :hover {
+      color: $secondary;
+    }
+  }
+}
+
+.about-bottom-nav {
+  list-style: none;
+
+  @include device(tab) {
+    display: flex;
+  }
+
+  &:last-child {
+    margin-top: 2rem;
+
+    @include device(tab) {
+      margin: 0;
+    }
   }
 }

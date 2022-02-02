@@ -39,8 +39,8 @@
   padding: 1.4rem 0 1rem 0;
   color: $secondary;
 
-  @include device (tab) {  
-    font-size: 6vw;    
+  @include device(tab) {
+    font-size: 6vw;
     padding-top: 1.5rem;
   }
 }
@@ -49,7 +49,7 @@
   @include paragraph;
 
   border: 2px solid white;
-  margin-top:2rem;
+  margin-top: 2rem;
 
   @include device (tab) {
     padding: 1rem 0;

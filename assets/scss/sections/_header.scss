@@ -66,8 +66,6 @@ header {
 }
 
 .menu-wrapper {
-  padding-bottom: 4rem;
-
   @include device(tab) {
     display: none;
   }
@@ -157,30 +155,32 @@ header {
 
 .nav-item:last-child {
   border: 2px solid $secondary;
-  padding: 0.7rem;  
+  padding: 0.7rem;
   max-width: 15rem;
   align-self: center;
 
-  @include device(tab){
-    &:hover {     
+  @include device(tab) {
+    &:hover {
       background: $secondary;
     }
   }
 
   .nav-link {
     border-bottom: none;
-    
+
     &:hover {
       color: $secondary;
       padding-bottom: 0;
-      @include device(tab) {     
+
+      @include device(tab) {
         color: $light;
       }
-    }    
-  } 
+    }
+  }
 }
 
 .navbar-brand {
+  margin-top: 4rem;
   padding: 1rem;
 
   .logo-image {
