@@ -533,6 +533,107 @@ header {
   border: 2px solid transparent;
 }
 
+.footer {
+  width: 100%;
+}
+
+.partners-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #272a31;
+  padding: 2.5rem 0;
+}
+
+.partner-logo {
+  display: flex;
+  width: 20%;
+  height: auto;
+  margin: 0 1.5rem;
+  max-height: 3.6rem;
+}
+@media only screen and (min-width: 768px) {
+  .partner-logo {
+    margin: 0 3rem;
+    width: 10.6rem;
+  }
+}
+
+.footer-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #d3d3d3;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-border {
+  align-self: center;
+  width: 4rem;
+  height: 3px;
+  background: #ec5242;
+  margin: 0.7rem auto 1rem auto;
+}
+
+.top-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .top-footer {
+    flex-direction: row;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 1.5rem 0;
+}
+@media only screen and (min-width: 768px) {
+  .top {
+    margin: 3rem 0;
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+@media only screen and (min-width: 768px) {
+  .bottom {
+    margin: 3rem 0;
+  }
+}
+
+.bottom-note {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.footer-logo {
+  display: block;
+  margin-right: 1.5rem;
+  width: 10.9rem;
+  height: auto;
+}
+
+.footer-para,
+p span {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: normal;
+  color: #272a31;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
