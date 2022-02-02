@@ -68,6 +68,9 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
  [![](https://img.shields.io/badge/Click-Here-blue)](www.google.com)
+  
+## Original design idea by Cindy Shin in Behance.
+ -https://creativecommons.org/licenses/by-nc/4.0/
 
 ## 📝 License
 
