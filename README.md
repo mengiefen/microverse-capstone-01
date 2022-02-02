@@ -67,7 +67,7 @@ To get a local copy up and running follow these simple example steps.
 - To my coding partners, morning session team,reviewers and standup team memebers.
 
 ## Live Demo
- [![](https://img.shields.io/badge/Click-Here-blue)](www.google.com)
+ [![](https://img.shields.io/badge/Click-Here-blue)](https://mengiefen.github.io/microverse-capstone-01/)
 
 ## 📝 License
 
