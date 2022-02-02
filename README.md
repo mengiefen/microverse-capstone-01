@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
   - Open terminal  
   - Change the directory you want put the repo
   - Then run
-      i. Run git clone <git@github.com:<accountid>/<repo-name>.git>
+      i. Run git clone <git@github.com:mengiefen/microverse-capstone-01.git>
       ii. cd repo-name/
   
 ### Install
@@ -63,7 +63,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 ## Acknowledgments
-
+- Credit to  [Cindy Shin](https://www.behance.net/adagio07) the author of the [original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 - To my coding partners, morning session team,reviewers and standup team memebers.
 
 ## Live Demo

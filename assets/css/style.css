@@ -58,3 +58,13 @@
   color: #bd081c;
   font-size: 3.2rem;
 }
+
+.blur > *:not(#about-header) {
+  filter: blur(3px);
+  overflow: hidden;
+}
+
+.blurr > *:not(#header) {
+  filter: blur(3px);
+  overflow: hidden;
+}
