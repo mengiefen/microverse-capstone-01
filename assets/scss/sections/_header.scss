@@ -1,0 +1,188 @@
+@import "../components/mixins";
+@import "variables";
+@import "../components/query_mixin";
+
+header {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 65vw;
+  height: 100vh;
+  z-index: 999;
+  padding: 2rem 1rem 2rem 1rem;
+  background: $primary;
+
+  @include device(tab) {
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 8rem;
+    background: white;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px 0 rgb(0, 0, 0, 0.3);
+}
+
+.top-nav {
+  display: none;
+  background: $primary;
+  list-style: none;
+  height: 3rem;
+  padding: 0 5.2rem;
+
+  @include device(tab) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.top-nav-item {
+  @include nav-item;
+
+  :hover {
+    color: $secondary;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: $light;
+  }
+}
+
+.wrapper-bottom-nav {
+  display: flex;
+  flex-direction: column;
+
+  @include device(tab) {
+    display: block;
+  }
+}
+
+.menu-wrapper {
+  padding-bottom: 4rem;
+
+  @include device(tab) {
+    display: none;
+  }
+}
+
+.open-menu {
+  position: absolute;
+  top: 2rem;
+  left: 2.5rem;
+
+  .fa-bars {
+    color: $primary;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+.close-menu {
+  position: absolute;
+  top: 2rem;
+  left: 2.5rem;
+
+  .fa-times {
+    color: $light;
+
+    :hover {
+      color: $secondary;
+    }
+  }
+}
+
+.wrapper-nav-list {
+  display: flex;
+  flex-direction: column;
+
+  @include device(tab) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 5.2rem;
+    padding-top: 0.2rem;
+  }
+}
+
+.bottom-nav {
+  list-style: none;
+
+  @include device(tab) {
+    display: flex;
+  }
+
+  &:last-child {
+    margin-top: 2rem;
+
+    @include device(tab) {
+      margin: 0;
+    }
+  }
+}
+
+.nav-item {
+  @include nav-item;
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: $light;
+
+    &:hover {
+      color: $secondary;
+    }
+
+    @include device(tab) {
+      font-size: 1.6rem;
+      color: $primary;
+
+      &:hover {
+        padding-bottom: 0.3rem;
+        border-bottom: 3px solid $secondary;
+      }
+    }
+  }
+}
+
+.nav-item:last-child {
+  border: 2px solid $secondary;
+  padding: 0.7rem;
+  max-width: 20rem;
+
+  &:hover {
+    border: 2px solid transparent;
+    background: $secondary;
+  }
+
+  .nav-link {
+    border-bottom: none;
+
+    &:hover {
+      color: $light;
+    }
+  }
+}
+
+.navbar-brand {
+  padding: 1rem;
+
+  .logo-image {
+    max-width: 12rem;
+    height: auto;
+  }
+
+  @include device(tab) {
+    padding: 0;
+  }
+}
