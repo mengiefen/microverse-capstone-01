@@ -1,3 +1,4 @@
+let index = 0;
 const teamData = [
   {
     id: 1,
@@ -44,22 +45,36 @@ const teamData = [
 ];
 
 const teamMembers = document.getElementById('teams');
+const load = document.getElementById('btn-load');
 
-teamData.forEach((member, index) => {
+function loadData(index = 0) {
+  let value;
+  for (let i = index; i < index + 2; i += 1) {
+    if (i >= index && i < index + 2) {
+      const memberHTML = `  
+              <div class="wrapper-member-image">
+                <img class="member-img" src=${teamData[i].picture}
+                  alt="speaket image">
+              </div>
+              <div class="member-details">
+                <h3 class="member-name">${teamData[i].name}</h3>
+                <h4 class="member-title">${teamData[i].title}</h4>
+                <p class="member-desc">${teamData[i].detail}</p>
+              </div>`;
+      const memberContainer = document.createElement('div');
+      memberContainer.classList.add('member-1');
+      memberContainer.innerHTML = memberHTML;
+      teamMembers.appendChild(memberContainer);
+    }
+    value = i + 1;
+  }
+
+  return value;
+}
+
+index = loadData();
+load.addEventListener('click', () => {
   if (index < teamData.length) {
-    const memberHTML = `  
-            <div class="wrapper-member-image">
-              <img class="member-img" src=${member.picture}
-                alt="speaket image">
-            </div>
-            <div class="member-details">
-              <h3 class="member-name">${member.name}</h3>
-              <h4 class="member-title">${member.title}</h4>
-              <p class="member-desc">${member.detail}</p>
-            </div>`;
-    const memberContainer = document.createElement('div');
-    memberContainer.classList.add('member-1');
-    memberContainer.innerHTML = memberHTML;
-    teamMembers.appendChild(memberContainer);
+    index = loadData(index);
   }
 });

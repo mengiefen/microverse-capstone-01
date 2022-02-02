@@ -157,21 +157,27 @@ header {
 
 .nav-item:last-child {
   border: 2px solid $secondary;
-  padding: 0.7rem;
-  max-width: 20rem;
+  padding: 0.7rem;  
+  max-width: 15rem;
+  align-self: center;
 
-  &:hover {
-    border: 2px solid transparent;
-    background: $secondary;
+  @include device(tab){
+    &:hover {     
+      background: $secondary;
+    }
   }
 
   .nav-link {
     border-bottom: none;
-
+    
     &:hover {
-      color: $light;
-    }
-  }
+      color: $secondary;
+      padding-bottom: 0;
+      @include device(tab) {     
+        color: $light;
+      }
+    }    
+  } 
 }
 
 .navbar-brand {
