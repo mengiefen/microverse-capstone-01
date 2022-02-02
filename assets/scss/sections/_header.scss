@@ -190,5 +190,6 @@ header {
 
   @include device(tab) {
     padding: 0;
+    margin-top: 0;
   }
 }

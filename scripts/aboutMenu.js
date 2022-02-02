@@ -5,13 +5,13 @@ const aboutHeaderItems = document.getElementsByClassName('navbar-brand')[0];
 const aboutMenuItems = document.querySelectorAll('.about-bottom-nav');
 
 function aboutDisplayMenu() {
-  aboutMenu.classList.toggle('hide');
+  aboutMenu.classList.add('hide');
   openMenuAbout.style.display = 'none';
   closeMenuAbout.style.display = 'block';
 }
 
 function aboutCollapseMenu() {
-  aboutMenu.classList.toggle('hide');
+  aboutMenu.classList.remove('hide');
   closeMenuAbout.style.display = 'none';
   openMenuAbout.style.display = 'block';
 }

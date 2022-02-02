@@ -179,6 +179,12 @@
   }
 }
 
+.about-menu-wrapper {
+  @include device(tab) {
+    display: none;
+  }
+}
+
 #about-close {
   position: absolute;
   top: 2rem;
