@@ -541,6 +541,7 @@ header {
 
 .member-1 .member-img {
   width: 100%;
+  max-width: 17.8rem;
   height: auto;
 }
 
