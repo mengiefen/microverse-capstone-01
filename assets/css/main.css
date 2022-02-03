@@ -233,7 +233,8 @@ header {
 
 #intro-section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 150vh;
   background-image: url("../../assets/images/pictures/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -534,7 +535,13 @@ header {
 
 .member-1 .wrapper-member-image {
   margin-right: 1.5rem;
-  align-self: center;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.member-1 .member-img {
+  width: 100%;
+  height: auto;
 }
 
 .member-1 .member-details {

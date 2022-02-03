@@ -40,7 +40,13 @@
 
   .wrapper-member-image {
     margin-right: 1.5rem;
-    align-self: center;
+    width: 100%;
+    align-self: flex-start;
+  }
+
+  .member-img {
+    width: 100%;
+    height: auto;
   }
 
   .member-details {
