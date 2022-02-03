@@ -1,4 +1,3 @@
-let index = 0;
 const teamData = [
   {
     id: 1,
@@ -44,14 +43,22 @@ const teamData = [
   },
 ];
 
+let index = 0;
 const teamMembers = document.getElementById('teams');
 const load = document.getElementById('btn-load');
+const collapse = document.getElementById('btn-collapse');
+collapse.style.display = 'none';
 
 function loadData(index = 0) {
   let value;
+  if (index === teamData.length - 2) {
+    load.style.display = 'none';
+    collapse.style.display = 'block';
+    value = teamData.length - 1;
+  }
   for (let i = index; i < index + 2; i += 1) {
     if (i >= index && i < index + 2) {
-      const memberHTML = `  
+      const memberHTML = `
               <div class="wrapper-member-image">
                 <img class="member-img" src=${teamData[i].picture}
                   alt="speaket image">
@@ -77,4 +84,12 @@ load.addEventListener('click', () => {
   if (index < teamData.length) {
     index = loadData(index);
   }
+});
+
+collapse.addEventListener('click', () => {
+  index = 0;
+  teamMembers.innerHTML = '';
+  index = loadData();
+  load.style.display = 'block';
+  collapse.style.display = 'none';
 });

@@ -40,7 +40,8 @@
   color: $secondary;
 
   @include device(tab) {
-    font-size: 6vw;
+    padding: 0;
+    font-size: 6.5vw;
     padding-top: 1.5rem;
   }
 }

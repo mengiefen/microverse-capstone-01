@@ -100,7 +100,6 @@
 .btn-solid {
   align-self: center;
   text-align: center;
-  border: none;
   padding: 2.4rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -110,6 +109,12 @@
   color: $light;
   background-color: $secondary;
   margin: 3rem 0;
+  border: 2px solid transparent;
+
+  &:hover,
+  &:active {
+    border: 2px solid $secondary;
+  }
 
   @include device(tab) {
     background: none;
@@ -117,11 +122,12 @@
     text-decoration: underline;
     font-weight: normal;
     margin: 7rem auto;
-  }
+    border: none;
 
-  &:hover,
-  &:active {
-    background: $light;
-    color: $secondary;
+    &:hover,
+    &:active {
+      border: none;
+      color: $secondary;
+    }
   }
 }

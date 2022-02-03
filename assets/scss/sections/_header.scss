@@ -49,10 +49,14 @@ header {
     color: $secondary;
   }
 
-  .nav-link {
+  .top-nav-link {
     text-decoration: none;
     font-size: 1.4rem;
     color: $light;
+
+    &:hover {
+      color: $secondary;
+    }
   }
 }
 

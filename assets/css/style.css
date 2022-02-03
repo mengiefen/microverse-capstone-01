@@ -68,3 +68,35 @@
   filter: blur(3px);
   overflow: hidden;
 }
+
+.image-overlay {
+  background: rgba(94, 32, 14, 0.8);
+  transition: all 0.5s;
+}
+
+.image-overlay:hover {
+  background: rgba(128, 128, 128, 0.8);
+}
+
+#work-section .btn-solid:hover {
+  background: transparent;
+  font-weight: 600;
+}
+
+header {
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 668px) {
+  header {
+    opacity: 1;
+  }
+
+  .about-open-menu {
+    display: none;
+  }
+
+  .open-menu {
+    display: none;
+  }
+}

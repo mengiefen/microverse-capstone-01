@@ -61,10 +61,14 @@ header {
   color: #ec5242;
 }
 
-.top-nav-item .nav-link {
+.top-nav-item .top-nav-link {
   text-decoration: none;
   font-size: 1.4rem;
   color: #d3d3d3;
+}
+
+.top-nav-item .top-nav-link:hover {
+  color: #ec5242;
 }
 
 .wrapper-bottom-nav {
@@ -263,7 +267,7 @@ header {
 }
 
 .heading {
-  font-size: 10vw;
+  font-size: 8vw;
   font-weight: 900;
   padding: 1.4rem 0 1rem 0;
   color: #ec5242;
@@ -272,7 +276,7 @@ header {
 @media only screen and (min-width: 768px) {
   .heading {
     padding: 0;
-    font-size: 6vw;
+    font-size: 6.5vw;
     padding-top: 1.5rem;
   }
 }
@@ -446,7 +450,6 @@ header {
 .btn-solid {
   align-self: center;
   text-align: center;
-  border: none;
   padding: 2.4rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -456,6 +459,12 @@ header {
   color: #d3d3d3;
   background-color: #ec5242;
   margin: 3rem 0;
+  border: 2px solid transparent;
+}
+
+.btn-solid:hover,
+.btn-solid:active {
+  border: 2px solid #ec5242;
 }
 
 @media only screen and (min-width: 768px) {
@@ -465,13 +474,14 @@ header {
     text-decoration: underline;
     font-weight: normal;
     margin: 7rem auto;
+    border: none;
   }
-}
 
-.btn-solid:hover,
-.btn-solid:active {
-  background: #d3d3d3;
-  color: #ec5242;
+  .btn-solid:hover,
+  .btn-solid:active {
+    border: none;
+    color: #ec5242;
+  }
 }
 
 #team-section {
@@ -578,10 +588,18 @@ header {
   font-weight: 600;
 }
 
-.btn-load .fa-angle-down {
+.btn-load i {
   padding-left: 1rem;
   font-size: 1.6rem;
   color: #ec5242;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-load {
+    padding: 1.6rem 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
 }
 
 .btn-load:hover,
@@ -589,6 +607,11 @@ header {
   background: #ec5242;
   color: #d3d3d3;
   border: 2px solid transparent;
+}
+
+.btn-load:hover i,
+.btn-load:active i {
+  color: #d3d3d3;
 }
 
 .footer {
@@ -710,6 +733,7 @@ p span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -732,7 +756,7 @@ p span {
 
 @media only screen and (min-width: 768px) {
   .about-heading {
-    font-size: 5.1rem;
+    font-size: 5.5vw;
   }
 }
 

@@ -87,10 +87,16 @@
   text-align: center;
   font-weight: 600;
 
-  .fa-angle-down {
+  i {
     padding-left: 1rem;
     font-size: 1.6rem;
     color: $secondary;
+  }
+
+  @include device(tab) {
+    padding: 1.6rem 0;
+    font-size: 1.6rem;
+    font-weight: 700;
   }
 
   &:hover,
@@ -98,5 +104,9 @@
     background: $secondary;
     color: $light;
     border: 2px solid transparent;
+
+    i {
+      color: $light;
+    }
   }
 }

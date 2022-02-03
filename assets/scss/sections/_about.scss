@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3rem;
 
   @include device(tab) {
     padding: 3rem 2.8rem 0 2.8rem;
@@ -34,7 +35,7 @@
   text-align: center;
 
   @include device(tab) {
-    font-size: 5.1rem;
+    font-size: 5.5vw;
   }
 }
 
