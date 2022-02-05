@@ -273,6 +273,7 @@ header {
   padding: 1.4rem 0 1rem 0;
   background: url("../../assets/images/pictures/text-bg.jpg");
   background-position: bottom;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: #ec5242;
   color: transparent;
@@ -765,6 +766,7 @@ p span {
   padding: 1.4rem 0 3rem 0;
   background: url("../../assets/images/pictures/text-bg.jpg");
   background-position: bottom;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: #ec5242;
   color: transparent;
