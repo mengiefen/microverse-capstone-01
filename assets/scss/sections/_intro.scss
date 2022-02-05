@@ -4,19 +4,24 @@
 
 #intro-section {
   width: 100%;
-  min-height: 100vh;
-  max-height: 150vh;
+  background-image: url("../../assets/images/pictures/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
 .wrapper {
-  padding: 10rem 2rem 0 2rem;
+  padding: 10rem 2rem 4rem 2rem;
 
   @include device(tab) {
     width: 80%;
-    padding: 12% 3rem 0 12rem;
+    padding: 14% 3rem 4rem 12rem;
+  }
+
+  @include device (lap) {
+    width: 80%;
+    padding: 12% 3rem 4rem 12rem;
+    min-height: 100vh;
   }
 }
 
@@ -35,7 +40,7 @@
 
 .heading {
   font-family: Cocogoose, Lato, sans-serif;
-  font-size: 8vw;
+  font-size: 9vw;
   font-weight: 400;
   padding: 1.4rem 0 1rem 0;
   background: url('../../assets/images/pictures/text-bg.jpg');
@@ -44,6 +49,10 @@
   -webkit-background-clip: text;
   color: $secondary;
   color: transparent;
+
+  @include device(note) {
+    font-size: 7vw;
+  }
 
   @include device(tab) {
     padding: 0;
@@ -55,7 +64,8 @@
 .header-text {
   @include paragraph;
 
-  border: 2px solid white;
+  border: 2px solid $light;
+  padding: 1rem 0;
   margin-top: 2rem;
 
   @include device (tab) {

@@ -7,7 +7,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 65vw;
+  width: 80vw;
   height: 100vh;
   z-index: 999;
   padding: 2.8rem 1rem 2.8rem 1rem;
@@ -63,6 +63,7 @@ header {
 .wrapper-bottom-nav {
   display: flex;
   flex-direction: column;
+
 
   @include device(tab) {
     display: block;
