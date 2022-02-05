@@ -6,7 +6,6 @@
   width: 100%;
   min-height: 100vh;
   max-height: 150vh;
-  background-image: url("../../assets/images/pictures/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -44,7 +43,6 @@
   -webkit-background-clip: text;
   color: $secondary;
   color: transparent;
-
 
   @include device(tab) {
     padding: 0;
