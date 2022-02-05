@@ -268,10 +268,15 @@ header {
 }
 
 .heading {
+  font-family: Cocogoose, Lato, sans-serif;
   font-size: 8vw;
-  font-weight: 900;
+  font-weight: 400;
   padding: 1.4rem 0 1rem 0;
+  background: url("/assets/images/pictures/text-bg.jpg");
+  background-position: bottom;
+  -webkit-background-clip: text;
   color: #ec5242;
+  color: transparent;
 }
 
 @media only screen and (min-width: 768px) {
@@ -737,11 +742,13 @@ p span {
 }
 
 .about-header {
+  font-family: Lato, sans-serif;
   padding: 6rem 2.8rem 0 2.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
+  color: #ec5242;
 }
 
 @media only screen and (min-width: 768px) {
@@ -757,7 +764,11 @@ p span {
   font-weight: 900;
   letter-spacing: 0.2rem;
   padding: 1.4rem 0 3rem 0;
+  background: url("../../assets/images/pictures/text-bg.jpg");
+  background-position: bottom;
+  -webkit-background-clip: text;
   color: #ec5242;
+  color: transparent;
   font-family: cocogoose, lato, serif;
   text-align: center;
 }
@@ -993,4 +1004,9 @@ html {
   scroll-behavior: smooth;
   font-family: Lato, serif;
   font-size: 10px;
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url("../fonts/Cocogoose.ttf");
 }

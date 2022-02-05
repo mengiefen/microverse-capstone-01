@@ -12,11 +12,13 @@
 }
 
 .about-header {
+  font-family: Lato, sans-serif;
   padding: 6rem 2.8rem 0 2.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
+  color: $secondary;
 
   @include device(tab) {
     padding: 3rem 2.8rem 0 2.8rem;
@@ -30,7 +32,12 @@
   font-weight: 900;
   letter-spacing: 0.2rem;
   padding: 1.4rem 0 3rem 0;
+  background: url('../../assets/images/pictures/text-bg.jpg');
+  background-position: bottom;
+  -webkit-background-clip: text;
+  background-clip: text;
   color: $secondary;
+  color: transparent;
   font-family: cocogoose, lato, serif;
   text-align: center;
 

@@ -35,10 +35,16 @@
 }
 
 .heading {
+  font-family: Cocogoose, Lato, sans-serif;
   font-size: 8vw;
-  font-weight: 900;
+  font-weight: 400;
   padding: 1.4rem 0 1rem 0;
+  background: url('/assets/images/pictures/text-bg.jpg');
+  background-position: bottom;
+  -webkit-background-clip: text;
   color: $secondary;
+  color: transparent;
+
 
   @include device(tab) {
     padding: 0;

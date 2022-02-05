@@ -22,6 +22,7 @@ function collapseMenu() {
 openMenu.addEventListener('click', displayMenu);
 closeMenu.addEventListener('click', collapseMenu);
 headerItems.addEventListener('click', collapseMenu);
+
 menuItems.forEach((element) => {
   element.addEventListener('click', collapseMenu);
 });
