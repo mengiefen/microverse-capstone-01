@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet) ![](https://img.shields.io/badge/MENGSTU-FENTAW-success)
 
-# Capstone-01: BaMeN Services Website
+# Capstone-01: "BaMeN Services" Website
 
-> In this project, the BaMen Service responsive website has been done using HTML and CSS and Vanilla JavaScript.
+> In this project, the "BaMen Service" responsive website has been done using HTML and CSS and Vanilla JavaScript.
 
 ## Screenshot
 
